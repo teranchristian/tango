@@ -20,6 +20,11 @@
       "run_at": "document_end"
     }
   ],
+  "options_page": "settings.html",
+  "permissions" : [
+    "storage",
+    "tabs"
+  ],
   "web_accessible_resources": [
     "css/tango.css"
   ]

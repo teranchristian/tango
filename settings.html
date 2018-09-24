@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tango</title>
+    <link rel="stylesheet" href="css/styles.css?ver=1.0" type="text/css" media="all">
+  </head>
+  <body>
+
+    <div class="navMenu">
+      <div class="logo">
+        <img class="logo-img" src="img/tango-icon.png" />
+      </div>
+      <ul>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </div>
+
+    <div style="margin-left:25%;padding:1px 16px;height:1000px;">
+
+ <div class="content">
+  <form action="/action_page.php">
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">First Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="lname">Last Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="country">Country</label>
+      </div>
+      <div class="col-75">
+        <select id="country" name="country">
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="subject">Subject</label>
+      </div>
+      <div class="col-75">
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+</div>
+
+        <h2>Fixed Full-height Side Nav</h2>
+        <h3>Try to scroll this area, and see how the sidenav sticks to the page</h3>
+        Favorite color:
+        <select id="color">
+          <option value="red">red</option>
+          <option value="green">green</option>
+          <option value="blue">blue</option>
+          <option value="yellow">yellow</option>
+        </select>
+
+        <label>
+          <input type="checkbox" id="like">
+            I like colors.
+        </label>
+
+        <div id="status"></div>
+        <button id="save">Save</button>
+    </div>
+    <script src="js/settings.js"></script>
+  </body>
+</html>
+
