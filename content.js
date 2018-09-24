@@ -18,7 +18,7 @@ for (var i = 0; i < elements.length; i++) {
 
     if (
       node.nodeType === TEXT_NODE &&
-      backList.indexOf(node.parentElement.localName) === -1
+      blackList.indexOf(node.parentElement.localName) === -1
     ) {
       var text = node.nodeValue;
       var divNode = document.createElement('span');
