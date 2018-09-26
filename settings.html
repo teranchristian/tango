@@ -18,69 +18,68 @@
       </ul>
     </div>
 
-    <div style="margin-left:25%;padding:1px 16px;height:1000px;">
-
- <div class="content">
-  <form action="/action_page.php">
-    <div class="row">
-      <div class="col-25">
-        <label for="fname">First Name</label>
+    <div style="margin-left:25%;padding:1px 16px;height:1000px;padding-top:45px">
+      <h3> Insert your tangos.. </h3>
+       <div class="content">
+        <div class="form">
+          <div class="row">
+            <div class="col-25">
+              <label for="fname">Word (tango) :</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="tango" name="tango" placeholder="Your tango..">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="romanji">Romanji</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="romanji" name="romanji" placeholder="..">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="hiragana">Hiragana</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="hiragana" name="hiragana" placeholder="..">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="katakana">katakana</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="katakana" name="katakana" placeholder="..">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="display">Display</label>
+            </div>
+            <div class="col-75">
+              <select id="display" name="display">
+                <option value="romanji">Romanji</option>
+                <option value="hiragana">Hiragana</option>
+                <option value="katakana">Katakana</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="notes">Notes</label>
+            </div>
+            <div class="col-75">
+              <textarea id="notes" name="notes" placeholder="Write some notes.." style="height:200px"></textarea>
+            </div>
+          </div>
+          <div class="row">
+            <div id="status"></div>
+            <button id="save">Save</button>
+          </div>
+        </div>
       </div>
-      <div class="col-75">
-        <input type="text" id="fname" name="firstname" placeholder="Your name..">
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-25">
-        <label for="lname">Last Name</label>
-      </div>
-      <div class="col-75">
-        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-25">
-        <label for="country">Country</label>
-      </div>
-      <div class="col-75">
-        <select id="country" name="country">
-          <option value="australia">Australia</option>
-          <option value="canada">Canada</option>
-          <option value="usa">USA</option>
-        </select>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-25">
-        <label for="subject">Subject</label>
-      </div>
-      <div class="col-75">
-        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-      </div>
-    </div>
-    <div class="row">
-      <input type="submit" value="Submit">
-    </div>
-  </form>
-</div>
-
-        <h2>Fixed Full-height Side Nav</h2>
-        <h3>Try to scroll this area, and see how the sidenav sticks to the page</h3>
-        Favorite color:
-        <select id="color">
-          <option value="red">red</option>
-          <option value="green">green</option>
-          <option value="blue">blue</option>
-          <option value="yellow">yellow</option>
-        </select>
-
-        <label>
-          <input type="checkbox" id="like">
-            I like colors.
-        </label>
-
-        <div id="status"></div>
-        <button id="save">Save</button>
     </div>
     <script src="js/settings.js"></script>
   </body>
